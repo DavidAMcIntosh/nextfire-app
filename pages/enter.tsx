@@ -108,7 +108,7 @@ function UsernameForm() {
         <form onSubmit={onSubmit}>
           <input name="username" placeholder="username" value={formValue} onChange={onChange} />
           <UsernameMessage username={formValue} isValid={isValid} loading={loading} />
-          <button type="submit" className='btn-green' disabled={isValid}>Choose</button>
+          <button type="submit" className='btn-green' disabled={!isValid}>Choose</button>
         </form>
       </section>
     )
